@@ -1,0 +1,41 @@
+@import "colors.rasi"
+
+* {
+    font:             "RobotoMono Nerd Font 40";
+    background-color: @nord-darker;
+    text-color:       @snow-dark;
+    lines:		      3;
+    columns:          1;
+}
+
+window {
+    width:            4.17%;
+    height:           19.5%;
+    location:         northeast;
+    x-offset:         -0.5%;
+    y-offset:         4%;
+}
+
+mainbox {
+    children:         [listview];
+}
+
+element, element-text, element-icon {
+    cursor:           pointer;
+}
+
+element {
+    padding:          0.25%;
+}
+
+element-text {
+    background-color: @transparent;
+}
+
+element-icon{
+    background-color: @transparent;
+}
+
+element selected {
+    background-color: @frost-darker;
+}

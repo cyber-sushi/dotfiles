@@ -1,0 +1,23 @@
+* {
+    transparent:    #00000000;
+
+    nord-darker:    #2e3440;
+    nord-dark:      #3b4252;
+    nord-bright:    #434c5e;
+    nord-brighter:  #4c566a;
+
+    snow-dark:      #d8dee9;
+    snow:           #e5e9f0;
+    snow-bright:    #eceff4;
+
+    frost-darker:   #5e81ac;
+    frost-dark:     #81a1c1;
+    frost-bright:   #88c0d0;
+    frost-brighter: #8fbcbb;
+
+    red:            #bf616a;
+    orange:         #d08770;
+    yellow:         #ebcb8b;
+    green:          #a3be8c;
+    pink:           #b48ead;
+}

@@ -1,0 +1,64 @@
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+include-file = ~/.config/polybar/colors_nord.ini
+include-file = ~/.config/polybar/modules_system.ini
+include-file = ~/.config/polybar/modules_custom.ini
+
+[bar/main]
+override-redirect = true
+wm-restack = i3
+
+bottom = false
+fixed-center = true
+height = 32
+offset-y = 6
+background = ${color.nord-darker}
+
+font-0 = RobotoMono Nerd Font:style=Regular:size=10;2
+font-1 = RobotoMono Nerd Font:style=Regular:size=20;4
+
+cursor-click = pointer
+
+[settings]
+throttle-output = 5
+throttle-output-for = 10
+screenchange-reload = false
+compositing-background = source
+compositing-foreground = over
+compositing-overline = over
+compositing-underline = over
+compositing-border = over
+pseudo-transparency = false
+
+[bar/left]
+inherit = bar/main
+offset-x = 0.4%
+width = 23.5%
+modules-left = menu sep-2 sep-2 workspaces sep-1 sep-2 title
+padding-left = 1
+padding-right = 1
+
+[bar/center]
+inherit = bar/main
+offset-x = 46%
+width = 8%
+modules-center = date
+
+[bar/tray]
+inherit = bar/main
+offset-x = 76%
+width = 4%
+modules-center = sep-2
+tray-position = center
+tray-background = ${color.nord-darker}
+
+[bar/right]
+inherit = bar/main
+offset-x = 80.6%
+width = 19%
+modules-left = cpu memory filesystem
+modules-right = sep-1 pulseaudio sep-2 power
+padding-right = 1
+padding-left = 1
